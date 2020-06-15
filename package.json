@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/mchlrtnz/Gulp-4-and-Babel-6#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0"
   }
 }
