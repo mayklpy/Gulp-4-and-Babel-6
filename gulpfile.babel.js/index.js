@@ -1,15 +1,7 @@
-import { src, dest, series, parallel } from "gulp";
+import { series, parallel } from "gulp";
 
-export const defaultTask = (cb) => {
-  console.log("Default task");
-  cb();
-};
+import { cleanTask } from "./tasks/cleanTask";
 
-export { defaultTask as default };
+export const buildTask = series(cleanTask);
 
-// function defaultTask(cb) {
-//   console.log("Default task");
-//   cb();
-// }
-
-// exports.default = defaultTask;
+export { cleanTask, buildTask as default };
