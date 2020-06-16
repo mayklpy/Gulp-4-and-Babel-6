@@ -8,10 +8,12 @@ export const config = {
   styles: {
     in: "source/styles/styles.scss",
     out: "build/css/",
+    watch: ["source/styles/**/*"],
   },
   html: {
-    in: "source/index.html",
+    in: "source/*.html",
     out: "build/",
+    watch: ["source/*.html", "source/html/**/*"],
     context: {
       author: pkgJSON.author,
       version: pkgJSON.version,
@@ -24,6 +26,6 @@ export const config = {
   scripts: {
     in: "source/scripts/**/*",
     out: "build/scripts/",
-    concat: "bundle.js" 
-  }
+    concat: "bundle.js",
+  },
 };
