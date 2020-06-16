@@ -1,6 +1,10 @@
 export const config = {
   root: {
-    src: "source/",
-    build: "build/",
+    in: "source/",
+    out: "build/",
   },
+  styles: {
+      in: "source/styles/styles.scss",
+      out: "build/css/"
+  }
 };
