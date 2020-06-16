@@ -17,4 +17,8 @@ export const config = {
       version: pkgJSON.version,
     },
   },
+  images: {
+    in: "source/images/**/*",
+    out: "build/images/",
+  },
 };
