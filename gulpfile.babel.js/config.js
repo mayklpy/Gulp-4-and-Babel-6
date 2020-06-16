@@ -21,4 +21,9 @@ export const config = {
     in: "source/images/**/*",
     out: "build/images/",
   },
+  scripts: {
+    in: "source/scripts/**/*",
+    out: "build/scripts/",
+    concat: "bundle.js" 
+  }
 };
